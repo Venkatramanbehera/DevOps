@@ -8,3 +8,9 @@
 	eg :- git commit -m "names.txt file added"
 5. git restore --staged filename :- convert staged file to untrack file
 	eg :- git restore --staged names.txt
+6. git stash :- store it in background 
+	eg :- git stash
+7. git stash pop :- when we need we can get it 
+	eg :- git stash pop
+8. git stash clear :- all the stored background data gets cleared
+	eg :- git stash clear

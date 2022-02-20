@@ -14,3 +14,9 @@
 	eg :- git stash pop
 8. git stash clear :- all the stored background data gets cleared
 	eg :- git stash clear
+9. git remote add origin "url" :- add the local folder to the url
+	eg :- git remote add origin "https://github.com/Venkatramanbehera/DevOps.git"
+10. git remote -v :- we can get all the url that are attached to the folder.
+	eg :- git remote -v 
+11. git push origin master :- shared the file to the remote repo.
+	eg :- git push origin master

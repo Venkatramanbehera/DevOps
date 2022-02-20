@@ -1,0 +1,10 @@
+1. git init :- to initialize a git repositories.
+	eg :- git init ( inside the folder )
+2. git status :- check all the untrack file.
+	eg :- git status ( inside folder )
+3. git add . / git add filename :- convert all untrack file to staging area and particular file also
+	eg :- git add . / git add names.txt
+4. git commit -m "messages" :- capture all the changes
+	eg :- git commit -m "names.txt file added"
+5. git restore --staged filename :- convert staged file to untrack file
+	eg :- git restore --staged names.txt

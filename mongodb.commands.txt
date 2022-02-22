@@ -1,0 +1,77 @@
+MONGO DB COMMANDS FOR DATABASES 
+
+commands    descriptions
+--------    ------------
+show dbs; -> view all databases
+
+use dbName; -> create a new or switch database
+
+db ; -> view current database
+
+db.dropDatabase() ; -> delete database
+
+------------------------------------------------
+MONGO DB COMMANDS FOR COLLECTIONS 
+
+commands                            descriptions
+--------                            ------------
+show collections        ->          to view the collection
+
+db.createCollection('comments') ->  create a collection named 'comments'
+
+db.<CollectionName>.drop()      ->       drop a collection 
+
+-------------------------------------------------
+MONGO DB COMMANDS FOR ROWS
+
+commands                                                     descriptions
+--------                                                      ------------
+
+db.<collectionName>.find()                                  --> Show All Rows in a collection
+
+db.<collectionName>.findOne({name:'chiku'})                 --> Find the First row matching the object
+
+db.<collectionName>.find().pretty()                         -->  Show All Rows in a collection (prettified)
+
+db.<collectionName>.insert({
+    'name' : 'chiku',                                        --> Insert One Row 
+    "language" : "javascript"
+})
+
+
+db.<collectionName>.insertMany([{
+    'name' : 'chiku',            
+    "language" : "javascript"
+},{                                                         -->  Insert Many Row
+    'name' : 'anisha',
+    "language" : 'c prog' 
+}])
+
+db.<collectionName>.find({ "name" : "chiku"})               --> Finding collections 
+
+db.<collectionName>.find().limit(2)                         --> Limit the number of row in output
+
+db.<collectionName>.find().count()                          --> Count The number of result
+
+db.<collectionName>.find().sort({key: 1/-1})                --> Sort the row 1 is for descending and -1 is for ascending
+
+db.<collectionName>.update({ searchFilter },{ setObject with new properties }) --> update the searched collection
+
+db.content.remove({ searchFilter })                         ---> Delete row 
+
+MONGO DB INCREMENT OPERATOR
+----------------------------
+db.<collectionName>.update({ searchFilter }, {
+    $inc : {
+        member_since : 2                                     ---> It is called then increment 2 with prev value of member_since
+    }
+})
+
+MONGO DB RENAME OPERATOR
+----------------------------
+db.<collectionName>.update({ searchFilter }, {
+    $rename : {
+        member_since : "member"                              ---> It is called then update the member_since field name to member
+    }
+})
+

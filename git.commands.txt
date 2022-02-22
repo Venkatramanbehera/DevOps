@@ -29,9 +29,12 @@
 15. git remote add upstream "url" : 
 16. git push origin master -f :- if you stashed some file locally but globally same files are there then we need to force push it.
 	eg :  git push origin master -f
+17. git pull upstream main :- take the changes of upstream branch and update the main branch of forked.
+	eg :- git pull upstream main
+18. git rebase -i 'commit code' :- merge all the commit to 1 commit.
+19. git reset -- hard 'commit hash code' :- remove the commit to that hash code 
 
-
-                                      X X X X - - - - X X X
+                                      X X X X - - - - X X X 
 
   1. origin - personal
   2. upstream - where we forked it

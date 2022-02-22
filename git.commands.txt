@@ -20,3 +20,18 @@
 	eg :- git remote -v 
 11. git push origin master :- shared the file to the remote repo.
 	eg :- git push origin master
+12. git branch branchName :- to create a new branch 
+	eg :- git brach branches-learning
+13. git checkout branchName :- to go inside the branch
+	eg :- git checkout branches-learning
+14. git merge branchName :- merge the branch with that branchName branch
+	eg :- git merge master
+15. git remote add upstream "url" : 
+16. git push origin master -f :- if you stashed some file locally but globally same files are there then we need to force push it.
+	eg :  git push origin master -f
+
+
+                                      X X X X - - - - X X X
+
+  1. origin - personal
+  2. upstream - where we forked it
